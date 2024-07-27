@@ -17,24 +17,55 @@ Avant de commencer, assurez-vous d'avoir les éléments suivants installés sur 
 
 1. **Cloner le dépôt Laravel :**
 
-   ```bash
    git clone https://github.com/wt-boss/youpi-test.git
    cd youpi-test-api
    composer install
-   configuerer le .env
-   generez la cle
-   faites les migrations
+   ```
+
+2. **Configurer le `.env`**
+
+3. **Générer la clé :**
+
+   php artisan key:generate
+   ```
+
+4. **Faire les migrations :**
+
+   php artisan migrate
+   ```
+
+5. **Démarrer le serveur :**
+
+   
    php artisan serve
-   L API sera accessible à http://localhost:8000.
-   php artisan l5-swagger:generate 
-   pour la documentation
+   ```
 
-Frontend (React)
+   L'API sera accessible à [http://localhost:8000](http://localhost:8000).
 
-cd youpi-test-apk
+6. **Générer la documentation :**
 
-Installer les dépendances JavaScript :
+   
+   php artisan l5-swagger:generate
+   ```
 
-npm install
+   La documentation sera accessible à [http://localhost:8000/api/documentation](http://localhost:8000/api/documentation).
 
-npm start
+### Frontend (React)
+
+1. **Accéder au répertoire du frontend :**
+
+   ``
+   cd youpi-test-apk
+   ```
+
+2. **Installer les dépendances JavaScript :**
+
+   
+   npm install
+   ```
+
+3. **Démarrer l'application :**
+
+   
+   npm start
+   ```
